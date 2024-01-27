@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@
 header{
     background: linear-gradient(90deg, #d7b879 0%, #acaab1 100%);
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 10px;
     /* border: 2px solid black; */
     outline: 3px double black;
@@ -23,17 +25,20 @@ header{
     right: 0;
     left: 0;
     width: 70%;
+    height: 125px;
     z-index: 1000;
     margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav{
     /* border: 1px solid red; */
     font-family: 'Bungee Shade', sans-serif;
-    padding: 1rem 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 nav a{
     /* border: 1px solid red; */
@@ -41,6 +46,7 @@ nav a{
     margin-left: 3rem;
     font-size: 24px;
     color: black;
+    text-align: center;
 }
 
 nav a:hover{
@@ -50,13 +56,18 @@ nav a:hover{
 nav a i{
     margin-right: 10px;
 }
+
+.links{
+    display: flex;
+    align-items: center;
+}
 /*! main */
 
 /*? home */
 #home{
     background: linear-gradient(90deg, #e8ce97 0%, #504b5b 100%);
     border-radius: 24px;
-    font-size: 2.5rem;
+    font-size: 24px;
     margin: 5rem 4rem;
     margin-top: 12rem;
     padding: 7rem 10rem;
@@ -209,3 +220,62 @@ textarea{
     border: none;
     padding: 1rem;
 }
+
+/*! Team menüsü eklendi QB135-ÖMER*/ 
+.menu {
+    background-color: rgba(255, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-family: 'Bungee Shade', sans-serif;
+}
+
+.menu:hover {
+    color: red;
+}
+
+.team {
+    position: relative;
+    display: inline-block;
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 12px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.team button {
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 24px;
+}
+
+.team-child {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.523);
+    min-width: 250px;
+    position: absolute;
+    top: 100%;
+    /* right: 1%; */
+}
+
+.team-child a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Black Ops One', system-ui;
+}
+
+.team:hover .team-child {
+    display: block;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: #d7b879;
+    margin-left: 1px;
+    /* padding-left: -15px; */
+    width: 45px;
+}
+
